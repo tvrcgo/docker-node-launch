@@ -1,0 +1,16 @@
+
+nginx:
+  build: './nginx'
+  volumes:
+    - /etc/nginx:/etc/docker/nginx
+  links:
+    - node:node
+  ports:
+    - '80:80'
+
+node:
+  build: './node'
+  volumes:
+    - /home/apps:/home/apps
+  ports:
+    - '8080-8090'
