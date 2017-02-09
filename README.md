@@ -3,5 +3,6 @@ Node integrated running envirement based on docker
 
 ### Composes
 
-- node@6.9.2
+- node@6.9.1
 - nginx
+- mongodb

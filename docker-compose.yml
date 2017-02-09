@@ -1,16 +1,22 @@
 
-nginx:
-  build: './nginx'
-  volumes:
-    - /etc/nginx:/etc/docker/nginx
-  links:
-    - node:node
-  ports:
-    - '80:80'
+version: '2'
 
-node:
-  build: './node'
-  volumes:
-    - /home/apps:/home/apps
-  ports:
-    - '8080-8090'
+services:
+
+  nginx:
+    build: ./nginx
+    image: vk-nginx
+    container_name: vk-nginx-run
+    depends_on:
+      - node
+    ports:
+      - '80:80'
+
+  node:
+    build: ./node
+    image: vk-node
+    container_name: vk-node-run
+    volumes:
+      - /home/apps:/apps
+    ports:
+      - '8080'
