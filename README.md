@@ -1,8 +1,14 @@
-# docker-node-run
+# docker-node-launch
 Node integrated running envirement based on docker
+
+### Start
+
+```sh
+./install.sh
+docker-compose up --build -d
+```
 
 ### Composes
 
-- node@6.9.1
+- node:slim
 - nginx
-- mongodb
