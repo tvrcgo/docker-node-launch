@@ -5,6 +5,6 @@ curl -L https://github.com/docker/compose/releases/download/1.8.0/run.sh > /usr/
 chmod +x /usr/local/bin/docker-compose
 docker-compose --version
 
-# move sample app
+# copy sample app
 mkdir -p /home/apps
-mv ./node/sample /home/apps/sample
+cp -rf ./node/sample /home/apps/sample
