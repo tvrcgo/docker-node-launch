@@ -12,3 +12,4 @@ docker-compose up --build -d
 
 - node:slim
 - nginx
+- gitlab-ci-runner

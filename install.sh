@@ -5,6 +5,13 @@ curl -L https://github.com/docker/compose/releases/download/1.8.0/run.sh > /usr/
 chmod +x /usr/local/bin/docker-compose
 docker-compose --version
 
+# nginx
+mkdir -p /etc/docker/nginx/conf.d
+
 # copy sample app
 mkdir -p /home/apps
 cp -rf ./node/sample /home/apps/sample
+
+# gitlab ci runner
+mkdir -p /etc/docker/gitlab-runner
+cp -f ./gitlab-ci-runner/config.toml /etc/docker/gitlab-runner/config.toml
