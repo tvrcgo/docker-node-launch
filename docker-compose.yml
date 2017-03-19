@@ -9,7 +9,7 @@ services:
     depends_on:
       - node
     volumes:
-      - /etc/docker/nginx/conf.d:/etc/nginx/conf.d
+      - /etc/docker/nginx/vhost:/etc/nginx/vhost
     ports:
       - '80:80'
 
