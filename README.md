@@ -5,7 +5,6 @@ Node integrated running envirement based on docker
 
 ```bash
 ./install.sh
-docker-compose up --build -d
 ```
 
 ### Composes

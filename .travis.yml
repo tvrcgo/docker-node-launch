@@ -8,7 +8,7 @@ services:
   - docker
 
 install:
-  - ./install.sh
+  - echo 'install'
 
 scripts:
   - docker-compose build

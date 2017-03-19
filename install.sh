@@ -12,3 +12,6 @@ cp -rf ./node/sample /home/apps/sample
 # gitlab ci runner
 mkdir -p /etc/docker/gitlab-runner
 cp -f ./gitlab-ci-runner/config.toml /etc/docker/gitlab-runner/config.toml
+
+# compose
+docker-compose up --build -d
