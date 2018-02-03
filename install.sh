@@ -6,12 +6,12 @@ chmod +x /usr/local/bin/docker-compose
 docker-compose --version
 
 # copy sample app
-mkdir -p /home/apps
-cp -rf ./node/sample /home/apps/sample
+mkdir -p /home/app
+cp -rn ./node/sample /home/app/sample
 
 # gitlab ci runner
 mkdir -p /etc/docker/gitlab-runner
-cp -f ./gitlab-ci-runner/config.toml /etc/docker/gitlab-runner/config.toml
+cp -n ./gitlab-ci-runner/config.toml /etc/docker/gitlab-runner/config.toml
 
 # compose
 docker-compose up --build -d

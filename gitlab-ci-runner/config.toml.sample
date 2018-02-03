@@ -11,6 +11,6 @@ check_interval = 0
     image = "ak-ci"
     privileged = false
     disable_cache = false
-    volumes = ["/cache", "/home/apps:/apps"]
+    volumes = ["/cache", "/home/app:/app"]
     pull_policy = 'if-not-present'
   [runners.cache]

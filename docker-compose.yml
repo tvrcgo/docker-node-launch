@@ -4,8 +4,8 @@ services:
 
   nginx:
     build: ./nginx
-    image: ak-nginx
-    container_name: ak-nginx-run
+    image: ark-nginx
+    container_name: ark-nginx-run
     depends_on:
       - node
     volumes:
@@ -15,16 +15,16 @@ services:
 
   node:
     build: ./node
-    image: ak-node
-    container_name: ak-node-run
+    image: ark-node
+    container_name: ark-node-run
     volumes:
-      - /home/apps:/apps
+      - /home/app:/app
     ports:
       - '8080-8090'
 
   ci:
     build: ./gitlab-ci-runner
-    image: ak-ci
+    image: ark-ci
 
   gitlab-runner:
     image: gitlab/gitlab-runner:latest

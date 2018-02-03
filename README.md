@@ -1,5 +1,5 @@
 # docker-node-launch
-Node integrated running envirement based on docker
+Node running envirement based on docker
 
 ### Start
 
