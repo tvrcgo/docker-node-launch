@@ -1,5 +1,5 @@
 FROM centos:7
-MAINTAINER tvrcgo <tvrcgo@gmail.com>
+LABEL maintainer="tvrcgo <tvrcgo@gmail.com>"
 
 RUN yum -y install git
 

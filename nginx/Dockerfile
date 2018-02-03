@@ -1,3 +1,3 @@
 FROM nginx
-MAINTAINER tvrcgo <tvrcgo@gmail.com>
+LABEL maintainer="tvrcgo <tvrcgo@gmail.com>"
 COPY *.conf /etc/nginx/
