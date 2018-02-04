@@ -25,6 +25,7 @@ services:
   ci:
     build: ./gitlab-ci-runner
     image: ark-ci
+    container_name: ark-ci-run
 
   gitlab-runner:
     image: gitlab/gitlab-runner:latest

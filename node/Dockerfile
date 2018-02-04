@@ -5,4 +5,5 @@ WORKDIR /app
 COPY ./sample /app/sample
 
 RUN npm install pm2 -g
-CMD pm2 logs
+RUN cd /app/sample && npm i
+CMD pm2 start index.js
