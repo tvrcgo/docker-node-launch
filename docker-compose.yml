@@ -17,10 +17,8 @@ services:
     build: ./node
     image: ark-node
     container_name: ark-node-run
-    volumes:
-      - /home/app:/app
     ports:
-      - '8080-8090'
+      - '8080'
 
   ci:
     build: ./gitlab-ci-runner
