@@ -10,8 +10,10 @@ services:
       - node
     volumes:
       - /etc/docker/nginx:/etc/nginx
+      - /etc/letsencrypt:/etc/letsencrypt
     ports:
       - '80:80'
+      - '443:443'
 
   node:
     build: ./node
